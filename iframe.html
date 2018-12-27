@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+  <meta charset="UTF-8">
+  <title>iframe 활용</title>
+</head>
+<body>
+	<h1>iFRAME을 활용한 HTML 파일 삽입</h1>
+	<iframe src="./img.html" frameborder="0" width="400" height="300" ></iframe>
+  <h1>iFRAME을 활용한 동영상 삽입</h1>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/tmazLWAeGqk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <h1>iFRAME을 활용한 지도 삽입</h1>
+  <!-- * Daum 지도 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+<div id="daumRoughmapContainer1545888820872" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<!--
+	2. 설치 스크립트
+	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+-->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1545888820872",
+		"key" : "rix2",
+		"mapWidth" : "600",
+		"mapHeight" : "300"
+	}).render();
+</script>
+<h1>iFRAME을 활용한 지도 삽입2</h1>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d712.4344850632345!2d-0.12503680299544306!3d51.54248201545245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ae1df734739%3A0x80e18edf8d97bf22!2sRapha!5e1!3m2!1sko!2skr!4v1545888901721" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</body>
+</html>
