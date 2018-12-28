@@ -1,0 +1,56 @@
+@charset "utf-8";
+body{
+  margin: 0;
+}
+a:link{
+  color: inherit;
+  text-decoration: none;
+}
+h1{
+  /* background: yellow; */
+  margin: 0;
+  text-align: center;
+  
+
+}
+.menu{
+  /* background-color: pink;
+  border: 10px solid red; */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  
+}
+.menu li{
+  float: left; 
+  width: 25%;
+  padding: 100px 0;
+  text-align: center;
+
+}
+.item1{
+  background-color: lime;
+  /* float: left; */
+}
+.item2{
+  background-color:orange;
+  /* float: left; */
+}
+.item3{
+  background-color: rgb(211, 96, 96);
+  /* float: left; */
+}
+.item4{
+  background-color: skyblue;
+  /* float: left; */
+}
+.menu a{
+  display: block;
+  padding: 100px 0;
+}
+.menu a:hover, .menu a:focus{
+  background-color: pink;
+  /* font-weight: bold;
+  font-size: 1.5em; */
+}
