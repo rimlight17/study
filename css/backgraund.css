@@ -1,0 +1,68 @@
+@charset "utf-8";
+body{
+  /*배경사진을 반복하지 않음 */
+/*배경위치를 지정 x, y - 현재 문서(글)의 중간 높이를 기준*/
+/*배경을 같이 스크롤 할 건지, 고정할 건지 */
+  /* background-color:yellow;
+  background-image: url('../asset/poster.jpg');
+  background-repeat: no-repeat; 
+  background-position: 50% 50%;  
+  background-size: contain;
+  background-attachment: fixed;  */
+  background: rgb(183, 222, 245) url('../asset/winter.jpg') no-repeat 50% 50% /contain fixed; /*단축표기법 */
+  
+}
+.bg{
+  position: relative;
+  width: 350px;
+  height: 350px;
+  background: pink url('../asset/summer.png') no-repeat -140px -150px;
+}
+.alpha{
+  background:rgba(0,0,0,0.5);
+  color: rgba(255,255,255,1);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 10px 0;
+  text-align: center;
+}  
+.gradient{
+  width: 500px;
+  height: 300px;
+  color: aliceblue;
+  /* background: aqua linear-gradient(-45deg, red, green); */
+  background: aqua repeating-linear-gradient(-45deg, rgb(255, 115, 0) 0, orange 10px, snow 10px, snow 20px);
+
+  background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+
+  background: #2196f3;  /* fallback for old browsers */
+
+  background: -webkit-linear-gradient(to right, #f44336, #2196f3);  /* Chrome 10-25, Safari 5.1-6 */
+
+background: linear-gradient(to right, #f44336, #2196f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+background: #4CA1AF;  /* fallback for old browsers */
+
+background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+
+background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+background:
+linear-gradient(27deg, #151515 5px, transparent 5px) 0 5px,
+linear-gradient(207deg, #151515 5px, transparent 5px) 10px 0px,
+linear-gradient(27deg, #222 5px, transparent 5px) 0px 10px,
+linear-gradient(207deg, #222 5px, transparent 5px) 10px 5px,
+linear-gradient(90deg, #1b1b1b 10px, transparent 10px),
+linear-gradient(#1d1d1d 25%, #1a1a1a 25%, #1a1a1a 50%, transparent 50%, transparent 75%, #242424 75%, #242424);
+background-color: #131313;
+background-size: 20px 20px;
+
+background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
+radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #48B;
+background-size: 110px 200px;
+background-repeat: repeat-x;
+}
+ 
